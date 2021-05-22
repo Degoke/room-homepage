@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Degoke/room-homepage)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/Degoke/room-homepage)
+- Live Site URL: [Visit](https://room-homepage-six-teal.vercel.app/)
 
 ## My process
 
@@ -45,5 +45,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Github - [@yourusername](https://github.com/Degoke)
+- Website - [Degoke](https://degoke.github.io/personal-portfolio)
+- Github - [Degoke](https://github.com/Degoke)

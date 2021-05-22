@@ -72,6 +72,7 @@ article {
   background-repeat: no-repeat;
   background-position: center;
   padding: 2rem 1rem;
+  transition: all 0.5s;
 }
 
 .section2 {
@@ -181,8 +182,16 @@ article {
     height: 70vh;
   }
 
-  .section2 > section {
+  .my-section {
     padding: 2rem 1rem 1rem 1rem;
+    transition: all 0.4s;
+    visibility: hidden;
+    transform: scale(0.5)
+  }
+
+  .animate {
+      visibility: visible;
+      transform: scale(1)
   }
 
   .section2 > section > *:not(:last-child) {
@@ -229,8 +238,11 @@ article {
 }
 
 @media all and (min-width: 970px) {
+
+    
   .section2 > section {
     padding: 4rem 2rem 0 2rem;
+    
   }
 
   .section2 > section > *:not(:last-child) {

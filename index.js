@@ -23,35 +23,55 @@ const heading = document.querySelector(".heading");
 const text = document.querySelector(".text");
 const hamburger = document.querySelector(".hamburger");
 const close = document.querySelector(".close");
+const sideSection = document
+  .querySelector(".section2")
+  .querySelector("section");
 
 let index = 0;
+
+section1.style.backgroundImage = `url(${data[index].image})`;
+heading.innerHTML = data[index].heading;
+text.innerHTML = data[index].text;
+sideSection.classList.add("animate");
 
 setInterval(() => {
   if (index == data.length - 1) {
     index = 0;
   }
-  index++;
-
-  section1.style.backgroundImage = `url(${data[index].image})`;
-  heading.innerHTML = data[index].heading;
-  text.innerHTML = data[index].text;
-}, 1000 * 20);
-
-next.addEventListener("click", () => {
-  if (index < data.length - 1) {
+  sideSection.classList.remove("animate");
+  setTimeout(() => {
     index++;
     section1.style.backgroundImage = `url(${data[index].image})`;
     heading.innerHTML = data[index].heading;
     text.innerHTML = data[index].text;
+    sideSection.classList.add("animate");
+  }, 500);
+}, 1000 * 30);
+
+next.addEventListener("click", () => {
+  if (index < data.length - 1) {
+    sideSection.classList.remove("animate");
+    setTimeout(() => {
+      index++;
+      section1.style.backgroundImage = `url(${data[index].image})`;
+      heading.innerHTML = data[index].heading;
+      text.innerHTML = data[index].text;
+      sideSection.classList.add("animate");
+    }, 500);
   }
 });
 
 previous.addEventListener("click", () => {
   if (index > 0) {
-    index--;
-    section1.style.backgroundImage = `url(${data[index].image})`;
-    heading.innerHTML = data[index].heading;
-    text.innerHTML = data[index].text;
+    sideSection.classList.remove("animate");
+      setTimeout(() => {
+          index--;
+          section1.style.backgroundImage = `url(${data[index].image})`;
+          heading.innerHTML = data[index].heading;
+          text.innerHTML = data[index].text;
+          sideSection.classList.add("animate");
+      }, 500)
+    
   }
 });
 
