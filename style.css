@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 12px;
+  font-family: "Spartan", sans-serif;
+  color: hsl(0, 0%, 63%);
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  display: flex;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+article {
+  line-height: 2ch;
+}
+
+.hamburger:hover,
+.close:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.container {
+  margin-bottom: 1rem;
+}
+
+.head {
+  display: flex;
+}
+
+.mobile-logo {
+  margin-left: 40%;
+}
+
+.nav {
+  display: none;
+}
+
+.mobile-nav {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+  padding: 3rem 1rem;
+  width: 100%;
+  font-weight: bold;
+}
+
+.mobile-nav > li {
+  margin: auto 3%;
+}
+.section1 {
+  height: 45vh;
+  background-image: url(images/desktop-image-hero-1.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2rem 1rem;
+}
+
+.section2 {
+  min-height: 45vh;
+}
+
+.section2 > section {
+  padding: 3rem 1rem;
+}
+
+.section2 > section > * {
+  margin-bottom: 1.5rem;
+}
+
+.section2 > section > h1 {
+  font-size: 26px;
+  color: hsl(0, 0%, 27%);
+}
+
+.shop-now {
+  border: none;
+  background: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1ch;
+  font-weight: bold;
+}
+
+.shop-now > span {
+  margin-left: 1rem;
+}
+
+.toggle-buttons {
+  display: none;
+}
+
+.section3 {
+  height: 30vh;
+  background-image: url(images/image-about-dark.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section4 {
+  padding: 3rem 1rem;
+  min-height: 40vh;
+}
+
+.section4 > section > h4 {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3ch;
+  color: hsl(0, 0%, 27%);
+}
+
+.section5 {
+  height: 30vh;
+  background-image: url(images/image-about-light.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media all and (min-width: 815px) {
+  .mobile-nav,
+  .head {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    color: #ffffff;
+  }
+
+  .nav > li {
+    margin: auto 3%;
+  }
+
+  .logo {
+    margin-right: 2rem;
+  }
+
+  .top {
+    display: flex;
+  }
+
+  .section1 {
+    flex: 60%;
+    height: 70vh;
+    padding: 3rem;
+  }
+
+  .section2 {
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70vh;
+  }
+
+  .section2 > section {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+
+  .section2 > section > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .section2 > section > h1 {
+    font-size: 32px;
+    color: hsl(0, 0%, 27%);
+  }
+
+  .toggle-buttons {
+    display: flex;
+    justify-self: flex-end;
+  }
+
+  .mybutton {
+    border: none;
+    background: #000000;
+    padding: 1rem 1.65rem;
+  }
+
+  .bottom {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .section3 {
+    height: 30vh;
+    flex: 30%;
+  }
+
+  .section4 {
+    flex: 40%;
+
+    padding: 1rem 0.5rem;
+    height: 30vh;
+  }
+
+  .section5 {
+    flex: 30%;
+    height: 30vh;
+  }
+}
+
+@media all and (min-width: 970px) {
+  .section2 > section {
+    padding: 4rem 2rem 0 2rem;
+  }
+
+  .section2 > section > *:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  .section4 {
+    padding: 2rem 1rem;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .section2 > section {
+    padding: 6rem 5rem 0 5rem;
+  }
+
+  .section2 > section > *:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  .section4 {
+    padding: 3rem 2rem;
+  }
+}
