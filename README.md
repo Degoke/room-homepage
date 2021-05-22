@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/Degoke/room-homepage)
-- Live Site URL: [Visit](https://room-homepage-six-teal.vercel.app/)
+- Live Site URL: [Visit](http://room-homepage-degoke.vercel.app/)
 
 ## My process
 
